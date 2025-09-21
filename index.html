@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>民宿介紹 - Django 民宿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; }
+        header { background: #4a90e2; color: #fff; padding: 20px 0; text-align: center; }
+        .container { max-width: 800px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        h2 { color: #4a90e2; }
+        .features { list-style: none; padding: 0; }
+        .features li { margin-bottom: 10px; }
+        .gallery { display: flex; gap: 10px; margin: 20px 0; }
+        .gallery img { width: 180px; height: 120px; object-fit: cover; border-radius: 6px; }
+        .contact { background: #eaf6ff; padding: 15px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Django 民宿</h1>
+        <p>享受舒適、溫馨的住宿體驗</p>
+    </header>
+    <div class="container">
+        <h2>民宿簡介</h2>
+        <p>
+            Django 民宿位於風景優美的地區，提供現代化設施與溫馨的服務，是您旅遊、度假的理想選擇。
+        </p>
+        <ul class="features">
+            <li>✔️ 免費 Wi-Fi</li>
+            <li>✔️ 空調房間</li>
+            <li>✔️ 早餐供應</li>
+            <li>✔️ 停車場</li>
+            <li>✔️ 友善寵物入住</li>
+        </ul>
+        <div class="gallery">
+            <a href="pages/exterior.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="民宿外觀">
+            </a>
+            <a href="pages/room.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="民宿房間">
+            </a>
+            <a href="pages/restaurant.html" target="_blank">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="民宿餐廳">
+            </a>
+            <a href="pages/exterior.html" target="_blank">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="民宿外觀">
+            </a>
+        </div>
+        <h2>聯絡我們</h2>
+        <div class="contact">
+            <p>地址：台灣台中市西屯區民宿路123號</p>
+            <p>電話：04-12345678</p>
+            <p>Email：info@djangohostel.com</p>
+        </div>
+    </div>
+</body>
+</html>

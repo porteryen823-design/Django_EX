@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>民宿房間 - Django 民宿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; }
+        header { background: #4a90e2; color: #fff; padding: 20px 0; text-align: center; }
+        .container { max-width: 800px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        h2 { color: #4a90e2; }
+        .gallery-wrapper { overflow: hidden; width: 100%; }
+        .gallery { display: flex; transition: transform 0.5s ease; }
+        .gallery img { width: 33.33%; height: auto; border-radius: 6px; }
+        .home-link { position: absolute; top: 10px; left: 10px; color: #fff; text-decoration: none; font-size: 16px; }
+    </style>
+    <script>
+        let currentIndex = 0;
+        function scrollGallery() {
+            const gallery = document.querySelector('.gallery');
+            currentIndex = (currentIndex + 1) % 4; // Adjust for 4 sets of 3 images
+            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        setInterval(scrollGallery, 3000);
+    </script>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">回首頁</a>
+        <h1>民宿房間</h1>
+        <p>探索我們舒適的房間設計</p>
+    </header>
+    <div class="container">
+        <h2>房間展示</h2>
+        <p>我們的房間提供現代化的設施與溫馨的佈置，讓您享受舒適的住宿體驗。</p>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間1">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間2">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間3">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間4">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間5">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間6">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間7">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間8">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間9">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間10">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間11">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="民宿房間12">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
