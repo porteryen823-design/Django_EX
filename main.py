@@ -7,5 +7,6 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
-for i in range(10):
-    print(fibonacci(i))
+for i in range(30):
+    print(f"F({i:2}) = {fibonacci(i):7}")
+
