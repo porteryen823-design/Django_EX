@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>交通資訊 - Django 民宿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+        }
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a90e2;
+        }
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        ul {
+            line-height: 1.6;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 6px;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">回首頁</a>
+        <h1>交通資訊</h1>
+        <p>輕鬆抵達 Django 民宿</p>
+    </header>
+    <div class="container">
+        <h2>如何到達我們的民宿</h2>
+        <ul>
+            <li><strong>搭乘火車：</strong>於台中火車站下車，轉乘公車或計程車約20分鐘抵達民宿。</li>
+            <li><strong>搭乘公車：</strong>搭乘公車至「民宿路口」站下車，步行約5分鐘即可抵達。</li>
+            <li><strong>自行開車：</strong>導航至「台中市西屯區民宿路123號」，民宿提供免費停車場。</li>
+            <li><strong>機場接送：</strong>可提前預約機場接送服務，請聯絡我們安排。</li>
+        </ul>
+        <h2>地圖位置</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1234567890123!2d120.654321!3d24.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693f1234567890%3A0xabcdef1234567890!2z5aSn5a2X5Y2X5YyX5YyX5YyX5YyX5YyX5YyX!5e0!3m2!1szh-TW!2stw!4v1680000000000!5m2!1szh-TW!2stw" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</body>
+</html>

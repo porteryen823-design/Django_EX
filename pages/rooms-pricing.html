@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>房型及價格 - Django 民宿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+        }
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a90e2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">回首頁</a>
+        <h1>房型及價格</h1>
+        <p>選擇適合您的舒適房型</p>
+    </header>
+    <div class="container">
+        <h2>房型介紹與價格</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>房型</th>
+                    <th>床型</th>
+                    <th>可入住人數</th>
+                    <th>設施</th>
+                    <th>價格 (每晚)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>標準雙人房</td>
+                    <td>雙人床</td>
+                    <td>2人</td>
+                    <td>免費Wi-Fi、空調、電視、獨立衛浴</td>
+                    <td>NT$1,800</td>
+                </tr>
+                <tr>
+                    <td>豪華雙人房</td>
+                    <td>雙人床</td>
+                    <td>2人</td>
+                    <td>免費Wi-Fi、空調、電視、獨立衛浴、陽台</td>
+                    <td>NT$2,500</td>
+                </tr>
+                <tr>
+                    <td>家庭四人房</td>
+                    <td>兩張雙人床</td>
+                    <td>4人</td>
+                    <td>免費Wi-Fi、空調、電視、獨立衛浴、兒童遊戲區</td>
+                    <td>NT$3,200</td>
+                </tr>
+                <tr>
+                    <td>套房</td>
+                    <td>雙人床 + 沙發床</td>
+                    <td>3-4人</td>
+                    <td>免費Wi-Fi、空調、電視、獨立衛浴、客廳空間、陽台</td>
+                    <td>NT$4,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
