@@ -11,8 +11,8 @@ F(n) = F(n-1) + F(n-2) (n >= 2)
 
 請使用動態規劃的方式計算費式數列的第 n 項。
 
-
 ## 網頁練功
-主頁式 index.html
-連接到 pages 資料夾的 external.html, restaurant.html, room.html 3個子頁面
-
+主頁式 index.html  
+連接到 pages 資料夾的 exterior.html, restaurant.html, room.html 3個子頁面  
+新增交通資訊頁面 transportation.html  
+新增房型及價格頁面 rooms-pricing.html
